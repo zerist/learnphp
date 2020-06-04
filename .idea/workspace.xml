@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cfcac4-db72-48ea-8086-09fde5c07ec3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/messageApp/authorControl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messageApp/gbookModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messageApp/leaveModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messageApp/message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messageApp/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
@@ -48,12 +53,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.test.php (1)">
+    <configuration name="test.php (1)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/messageApp/test.php">
+      <method v="2" />
+    </configuration>
     <configuration name="test.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/test.php">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.test.php (1)" />
         <item itemvalue="PHP Script.test.php" />
       </list>
     </recent_temporary>
@@ -75,6 +84,7 @@
       <workItem from="1591192731813" duration="280000" />
       <workItem from="1591193036433" duration="1644000" />
       <workItem from="1591241958548" duration="1156000" />
+      <workItem from="1591272017941" duration="3579000" />
     </task>
     <servers />
   </component>

@@ -40,6 +40,5 @@ $obj = new machine();
 $obj -> demo( new palin());
 //$obj -> demo( new car());
 
-?>
 
 
