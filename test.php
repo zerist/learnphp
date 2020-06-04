@@ -1,37 +1,45 @@
 <?php
-    class Person{
-        private $name;
-        private $age;
-        private $sex;
 
-        function __construct($name="", $sex="man", $age=10){
-            $this->name = $name;
-            $this->sex = $sex;
-            $this->age = $age;
-        }
+interface mobile
+{
+    public function run();
+}
 
-        public function __isset($propertyName){
-            if($propertyName == "name"){
-                return false;
-            }
-            return isset($this->$propertyName);
-        }
-
-        public function __unset($propertyName){
-            if($propertyName == "name"){
-                return;
-            }
-            unset($this->$propertyName);
-        }
-
-        public function say(){
-            echo "my name is ".$this->name." sex:".$this->sex." age:".$this->age.".<br>";
-        }
+class palin implements mobile
+{
+    public function run()
+    {
+        // TODO: Implement run() method.
+        echo "a plain";
     }
 
-    $person1 = new Person("xk", "man", 23);
+    public function fly()
+    {
+        echo "fly";
+    }
+}
 
-    var_dump(isset($person1->age));
-    unset($person1->name);
-    $person1->say();
+class car implements mobile
+{
+    public function run()
+    {
+        // TODO: Implement run() method.
+        echo "a car";
+    }
+}
+
+class machine
+{
+    public function demo(mobile $a)
+    {
+        $a->fly();
+    }
+}
+
+$obj = new machine();
+$obj -> demo( new palin());
+//$obj -> demo( new car());
+
 ?>
+
+
