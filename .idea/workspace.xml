@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cfcac4-db72-48ea-8086-09fde5c07ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DecorateStratege/ConcreteDecrator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DecorateStratege/Finery.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DecorateStratege/Person.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DecorateStratege/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplearn/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/learnphp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learnphp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +14,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
@@ -29,15 +30,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1SdFo9cWfBW4WNe7MSwiGAZ0IEX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../php/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\learnphp" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -51,11 +64,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.test.php (2)">
+  <component name="RunManager" selected="PHP Script.test.php (3)">
     <configuration name="test.php (1)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/messageApp/test.php">
       <method v="2" />
     </configuration>
     <configuration name="test.php (2)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/DecorateStratege/test.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.php (3)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/httplearn/test.php">
       <method v="2" />
     </configuration>
     <configuration name="test.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/test.php">
@@ -63,6 +79,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.test.php (3)" />
         <item itemvalue="PHP Script.test.php (2)" />
         <item itemvalue="PHP Script.test.php (1)" />
         <item itemvalue="PHP Script.test.php" />
@@ -87,7 +104,9 @@
       <workItem from="1591193036433" duration="1644000" />
       <workItem from="1591241958548" duration="1156000" />
       <workItem from="1591272017941" duration="4252000" />
-      <workItem from="1591358826317" duration="2637000" />
+      <workItem from="1591358826317" duration="6316000" />
+      <workItem from="1591386032925" duration="1011000" />
+      <workItem from="1591387076900" duration="1328000" />
     </task>
     <servers />
   </component>
