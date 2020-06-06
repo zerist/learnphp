@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cfcac4-db72-48ea-8086-09fde5c07ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ZLTemplate/CompileClass.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ZLTemplate/ZLTemplate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ZLTemplate/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZLTemplate/cache/aa08769cdcb26674c6706093503ff0a3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZLTemplate/template/member.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZLTemplate/CompileClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/ZLTemplate/CompileClass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZLTemplate/ZLTemplate.php" beforeDir="false" afterPath="$PROJECT_DIR$/ZLTemplate/ZLTemplate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZLTemplate/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/ZLTemplate/test.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +39,11 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1SdFo9cWfBW4WNe7MSwiGAZ0IEX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -47,6 +52,9 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\learnphp\ZLTemplate\template" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\learnphp" />
     </key>
@@ -110,7 +118,7 @@
       <workItem from="1591358826317" duration="6316000" />
       <workItem from="1591386032925" duration="1011000" />
       <workItem from="1591387076900" duration="1328000" />
-      <workItem from="1591427618760" duration="4601000" />
+      <workItem from="1591427618760" duration="8361000" />
     </task>
     <servers />
   </component>
@@ -129,5 +137,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -5,7 +5,7 @@ class ZLTemplate
 {
     private $arrayConfig = array(
         'suffix' => '.m',  //模板文件后缀
-        'templateDir' => 'tempalte/', //模板目录
+        'templateDir' => 'template/', //模板目录
         'compileDir' => 'cache/', //编译后存放目录
         'cache_htm' => false,    //是否编译静态html文件
         'suffix_cache' => '.htm', //编译文件后缀
@@ -73,9 +73,9 @@ class ZLTemplate
     {
         $this->file = $file;
         if (!is_file($this->path())) {
-            exit("找不到对应模板文件:" . $file);
+            exit("找不到对应模板文件:" . $this->path());
         }
-        $compileFile = $this->arrayConfig['compileDir'] . '/' . md5($file) . '.php';
+        $compileFile = $this->arrayConfig['compileDir'] . md5($file) . '.php';
         var_dump($compileFile);
         var_dump($this->path());
         if (!is_file($compileFile)) {
