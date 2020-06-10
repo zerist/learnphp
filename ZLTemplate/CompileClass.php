@@ -14,15 +14,21 @@ class CompileClass
 
     public function __construct()
     {
-        $this->T_P[] = "#\{\ \$([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*) \}#";
+        $this->T_P[] = "#\{\$([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)\}#";
         $this->T_P[] = "#\{(loop|foreach)\ \$([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)\}#";
         $this->T_P[] = "#\{\/(loop|foreach)\}#";
         $this->T_P[] = "#\{([K|V])\}#";
+        $this->T_P[] = "#\{if(.*?)\}#";
+        $this->T_P[] = "#\{(else if|elseif)(.*?)\}#";
+        $this->T_P[] = "#\{else\}#";
 
         $this->T_R[] = "<?php echo $this->value['\\1'];?>";
         $this->T_R[] = "<?php foreach((array)\$this->value['\\2'] as \$K=>\$V){?>";
         $this->T_R[] = "<?php }?>";
         $this->T_R[] = "<?php echo \$\\1; ?>";
+        $this->T_R[] = "<?php if(\\1){ ?>";
+        $this->T_R[] = "<?php }else if(\\2){ ?>";
+        $this->T_R[] = "<?php }else{ ?>";
     }
 
     public function compile($source, $destFile)

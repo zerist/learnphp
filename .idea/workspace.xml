@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cfcac4-db72-48ea-8086-09fde5c07ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ZLTemplate/cache/aa08769cdcb26674c6706093503ff0a3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ZLTemplate/template/member.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVCtest/config/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVCtest/fastphp/Core.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVCtest/fastphp/FastPHP.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MVCtest/public/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZLTemplate/CompileClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/ZLTemplate/CompileClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZLTemplate/ZLTemplate.php" beforeDir="false" afterPath="$PROJECT_DIR$/ZLTemplate/ZLTemplate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZLTemplate/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/ZLTemplate/test.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,11 +52,11 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\learnphp\ZLTemplate\template" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\learnphp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\learnphp\ZLTemplate\template" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -118,7 +118,8 @@
       <workItem from="1591358826317" duration="6316000" />
       <workItem from="1591386032925" duration="1011000" />
       <workItem from="1591387076900" duration="1328000" />
-      <workItem from="1591427618760" duration="8361000" />
+      <workItem from="1591427618760" duration="10700000" />
+      <workItem from="1591777468148" duration="3907000" />
     </task>
     <servers />
   </component>
