@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cfcac4-db72-48ea-8086-09fde5c07ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/httplearn/memcachetest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplearn/FlexiHash.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplearn/arrays.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/httplearn/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/httplearn/test.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,11 +69,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.memcachetest.php">
-    <configuration name="memcachetest.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/httplearn/memcachetest.php">
+  <component name="RunManager" selected="PHP Script.test.php (3)">
+    <configuration name="arrays.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/httplearn/arrays.php">
       <method v="2" />
     </configuration>
-    <configuration name="test.php (2)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/DecorateStratege/test.php">
+    <configuration name="memcachetest.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/httplearn/memcachetest.php">
       <method v="2" />
     </configuration>
     <configuration name="test.php (3)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/httplearn/test.php">
@@ -87,11 +87,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.test.php (3)" />
+        <item itemvalue="PHP Script.arrays.php" />
         <item itemvalue="PHP Script.memcachetest.php" />
         <item itemvalue="PHP Script.test.php (5)" />
         <item itemvalue="PHP Script.test.php (4)" />
-        <item itemvalue="PHP Script.test.php (3)" />
-        <item itemvalue="PHP Script.test.php (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -120,6 +120,7 @@
       <workItem from="1591777468148" duration="7486000" />
       <workItem from="1591814238060" duration="1012000" />
       <workItem from="1591815278249" duration="2137000" />
+      <workItem from="1591871497736" duration="4573000" />
     </task>
     <servers />
   </component>
