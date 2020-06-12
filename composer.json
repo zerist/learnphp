@@ -1,0 +1,19 @@
+{
+    "name": "15180/learnphp",
+    "type": "library",
+    "require": {
+        "phpunit/phpunit": "^9.2",
+        "monolog/monolog": "^2.1"
+    },
+    "authors": [
+        {
+            "name": "zerist",
+            "email": "15871792739@163.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    }
+}

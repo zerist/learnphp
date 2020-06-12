@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cfcac4-db72-48ea-8086-09fde5c07ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WeiboListApp/RedisSession.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeiboListApp/session_get.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeiboListApp/session_set.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unittest/Calculator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unittest/CalculatorTests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httplearn/redistest.php" beforeDir="false" afterPath="$PROJECT_DIR$/httplearn/redistest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,9 +55,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/composer.json" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.php.debug.xdebug.proxy" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -77,7 +79,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.redistest.php">
+  <component name="RunManager" selected="PHPUnit.CalculatorTests">
+    <configuration name="CalculatorTests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner class="CalculatorTests" directory="$PROJECT_DIR$/unittest" file="$PROJECT_DIR$/unittest/CalculatorTests.php" scope="Class" />
+      <method v="2" />
+    </configuration>
     <configuration name="arrays.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/httplearn/arrays.php">
       <method v="2" />
     </configuration>
@@ -93,6 +99,14 @@
     <configuration name="test.php (5)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ZLTemplate/test.php">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="PHP Script.arrays.php" />
+      <item itemvalue="PHP Script.memcachetest.php" />
+      <item itemvalue="PHP Script.redistest.php" />
+      <item itemvalue="PHP Script.test.php (3)" />
+      <item itemvalue="PHP Script.test.php (5)" />
+      <item itemvalue="PHPUnit.CalculatorTests" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="PHP Script.redistest.php" />
@@ -129,7 +143,7 @@
       <workItem from="1591814238060" duration="1012000" />
       <workItem from="1591815278249" duration="2137000" />
       <workItem from="1591871497736" duration="7556000" />
-      <workItem from="1591946609428" duration="2888000" />
+      <workItem from="1591946609428" duration="10682000" />
     </task>
     <servers />
   </component>
