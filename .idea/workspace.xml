@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cfcac4-db72-48ea-8086-09fde5c07ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/httplearn/FlexiHash.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/httplearn/arrays.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/httplearn/redistest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httplearn/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/httplearn/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/httplearn/arrays.php" beforeDir="false" afterPath="$PROJECT_DIR$/httplearn/arrays.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +34,14 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="bebe9ebc-d01c-4481-b648-cc23f0a9487f" name="localhost" />
+    </servers>
+  </component>
+  <component name="PhpWebServerValidation" path_to_validation_script="D:\xampp\htdocs\learnphp" selected_validation_type="LOCAL" web_path_to_validation_script="http://127.0.0.1/" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpXdebugProxy" ide_key="phpstorm" host="localhost" port="80" />
   <component name="ProjectId" id="1SdFo9cWfBW4WNe7MSwiGAZ0IEX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -69,17 +75,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.test.php (3)">
+  <component name="RunManager" selected="PHP Script.redistest.php">
     <configuration name="arrays.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/httplearn/arrays.php">
       <method v="2" />
     </configuration>
     <configuration name="memcachetest.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/httplearn/memcachetest.php">
       <method v="2" />
     </configuration>
-    <configuration name="test.php (3)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/httplearn/test.php">
+    <configuration name="redistest.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/httplearn/redistest.php">
       <method v="2" />
     </configuration>
-    <configuration name="test.php (4)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/pdo/test.php">
+    <configuration name="test.php (3)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/httplearn/test.php">
       <method v="2" />
     </configuration>
     <configuration name="test.php (5)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/ZLTemplate/test.php">
@@ -87,11 +93,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.redistest.php" />
         <item itemvalue="PHP Script.test.php (3)" />
         <item itemvalue="PHP Script.arrays.php" />
         <item itemvalue="PHP Script.memcachetest.php" />
         <item itemvalue="PHP Script.test.php (5)" />
-        <item itemvalue="PHP Script.test.php (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -120,7 +126,8 @@
       <workItem from="1591777468148" duration="7486000" />
       <workItem from="1591814238060" duration="1012000" />
       <workItem from="1591815278249" duration="2137000" />
-      <workItem from="1591871497736" duration="4573000" />
+      <workItem from="1591871497736" duration="7556000" />
+      <workItem from="1591946609428" duration="205000" />
     </task>
     <servers />
   </component>
