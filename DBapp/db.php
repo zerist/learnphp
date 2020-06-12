@@ -15,8 +15,8 @@ class DB{
     private $closed;
 
     public function open($pathname){
-        $idx_path = $pathname.'idx';
-        $dat_path = $pathname.'dat';
+        $idx_path = $pathname.'.idx';
+        $dat_path = $pathname.'.dat';
         if(!file_exists($idx_path)){
             $init = true;
             $mode = "w+b";
