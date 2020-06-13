@@ -9,61 +9,65 @@ define("DB_KEY_EXISTS", 1);
 define("DB_FAILURE", -1);
 define("DB_SUCCESS", 0);
 
-class DB{
+class DB
+{
     private $idx_fp;
     private $dat_fp;
     private $closed;
 
-    public function open($pathname){
-        $idx_path = $pathname.'.idx';
-        $dat_path = $pathname.'.dat';
-        if(!file_exists($idx_path)){
+    public function open($pathname)
+    {
+        $idx_path = $pathname . '.idx';
+        $dat_path = $pathname . '.dat';
+        if (!file_exists($idx_path)) {
             $init = true;
             $mode = "w+b";
-        }else{
+        } else {
             $init = false;
             $mode = "r+b";
         }
         $this->idx_fp = fopen($idx_path, $mode);
-        if(!$this->idx_fp){
+        if (!$this->idx_fp) {
             return DB_FAILURE;
         }
-        if($init){
+        if ($init) {
             $elem = pack("L", 0x00000000);
-            for($i=0; $i<DB_BUCKET_SIZE; $i++){
+            for ($i = 0; $i < DB_BUCKET_SIZE; $i++) {
                 fwrite($this->idx_fp, $elem, 4);
             }
         }
         $this->dat_fp = fopen($dat_path, $mode);
-        if(!$this->dat_fp){
+        if (!$this->dat_fp) {
             return DB_FAILURE;
         }
         return DB_SUCCESS;
     }
 
-    public function dbhash($string){
+    public function dbhash($string)
+    {
         $string = substr(md5($string), 0, 8);
         $hash = 0;
-        for($i=0; $i<8; $i++){
-            $hash += 33*$hash + ord($string[$i]);
+        for ($i = 0; $i < 8; $i++) {
+            $hash += 33 * $hash + ord($string[$i]);
         }
         return $hash & 0x7FFFFFFF;
     }
 
-    public function fetch($key){
+    public function fetch($key)
+    {
         $offset = ($this->dbhash($key) % DB_BUCKET_SIZE) * 4;
         fseek($this->idx_fp, $offset, SEEK_SET);
         $pos = unpack("L", fread($this->idx_fp, 4));
         $pos = $pos[1];
         $found = false;
-        while ($pos){
+        while ($pos) {
             fseek($this->idx_fp, $pos, SEEK_SET);
             $block = fread($this->idx_fp, DB_INDEX_SIZE);
             $cpkey = substr($block, 4, DB_KEY_SIZE);
-            if(!strncmp($key, $cpkey, strlen($key))){
-                $dataoff = unpack("L", substr($block, DB_KEY_SIZE+4, 4));
+            if (!strncmp($key, $cpkey, strlen($key))) {
+                $dataoff = unpack("L", substr($block, DB_KEY_SIZE + 4, 4));
                 $dataoff = $dataoff[1];
-                $datalen = unpack("L", substr($block, DB_KEY_SIZE+8, 4));
+                $datalen = unpack("L", substr($block, DB_KEY_SIZE + 8, 4));
                 $datalen = $datalen[1];
                 $found = true;
                 break;
@@ -71,7 +75,7 @@ class DB{
             $pos = unpack("L", substr($block, 0, 4));
             $pos = $pos[1];
         }
-        if(!$found){
+        if (!$found) {
             return null;
         }
         fseek($this->dat_fp, $dataoff, SEEK_SET);
@@ -79,20 +83,21 @@ class DB{
         return $data;
     }
 
-    public function insert($key, $data){
+    public function insert($key, $data)
+    {
         $offset = ($this->dbhash($key) % DB_BUCKET_SIZE) * 4;
         $idxoff = fstat($this->idx_fp);
         $idxoff = intval($idxoff['size']);
         $datoff = fstat($this->dat_fp);
         $datoff = intval($datoff['size']);
         $keylen = strlen($key);
-        if($keylen > DB_KEY_SIZE){
+        if ($keylen > DB_KEY_SIZE) {
             return DB_FAILURE;
         }
         $block = pack("L", 0x00000000);
         $block .= $key;
         $space = DB_KEY_SIZE - $keylen;
-        for($i=0; $i<$space; $i++){
+        for ($i = 0; $i < $space; $i++) {
             $block .= pack("C", 0x00);
         }
         $block .= pack("L", $datoff);
@@ -100,7 +105,7 @@ class DB{
         fseek($this->dat_fp, $offset, SEEK_SET);
         $pos = unpack("L", fread($this->idx_fp, 4));
         $pos = $pos[1];
-        if($pos == 0){
+        if ($pos == 0) {
             fseek($this->idx_fp, $offset, SEEK_SET);
             fwrite($this->idx_fp, pack("L", $idxoff), 4);
             fseek($this->idx_fp, 0, SEEK_END);
@@ -110,11 +115,11 @@ class DB{
             return DB_SUCCESS;
         }
         $found = false;
-        while ($pos){
+        while ($pos) {
             fseek($this->idx_fp, $pos, SEEK_SET);
             $tmp_block = fread($this->idx_fp, DB_INDEX_SIZE);
             $cpkey = substr($tmp_block, 4, DB_KEY_SIZE);
-            if(!strncmp($key, $cpkey, strlen($key))){
+            if (!strncmp($key, $cpkey, strlen($key))) {
                 $dataoff = unpack("L", substr($tmp_block, DB_KEY_SIZE + 4, 4));
                 $dataoff = $dataoff[1];
                 $datalen = unpack("L", substr($tmp_block, DB_KEY_SIZE + 8, 4));
@@ -126,7 +131,7 @@ class DB{
             $pos = unpack("L", substr($tmp_block, 0, 4));
             $pos = $pos[1];
         }
-        if($found){
+        if ($found) {
             return DB_KEY_EXISTS;
         }
         fseek($this->idx_fp, $prev, SEEK_SET);
@@ -138,7 +143,8 @@ class DB{
         return DB_SUCCESS;
     }
 
-    public function delete($key){
+    public function delete($key)
+    {
         $offset = ($this->dbhash($key) % DB_BUCKET_SIZE) * 4;
         fseek($this->idx_fp, $offset, SEEK_SET);
         $head = unpack("L", fread($this->idx_fp, 4));
@@ -146,34 +152,35 @@ class DB{
         $curr = $head;
         $prev = 0;
         $found = false;
-        while ($curr){
+        while ($curr) {
             fseek($this->idx_fp, $curr, SEEK_SET);
             $block = fread($this->idx_fp, DB_INDEX_SIZE);
             $next = unpack("L", substr($block, 0, 4));
             $next = $next[1];
             $cpkey = substr($block, 4, DB_KEY_SIZE);
-            if(!strncmp($key, $cpkey, strlen($key))){
+            if (!strncmp($key, $cpkey, strlen($key))) {
                 $found = true;
                 break;
             }
             $prev = $curr;
             $curr = $next;
         }
-        if(!$found){
+        if (!$found) {
             return DB_FAILURE;
         }
-        if($prev == 0){
+        if ($prev == 0) {
             fseek($this->idx_fp, $offset, SEEK_SET);
-            fwrite($this->idx_fp, pack("L", $next),4);
-        }else{
+            fwrite($this->idx_fp, pack("L", $next), 4);
+        } else {
             fseek($this->idx_fp, $prev, SEEK_SET);
             fwrite($this->idx_fp, pack("L", $next), 4);
         }
         return DB_SUCCESS;
     }
 
-    public function close(){
-        if(!$this->closed){
+    public function close()
+    {
+        if (!$this->closed) {
             fclose($this->idx_fp);
             fclose($this->dat_fp);
             $this->closed = true;

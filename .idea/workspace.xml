@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cfcac4-db72-48ea-8086-09fde5c07ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DBapp/datest.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DBapp/datest.idx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DBapp/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/refactoringguru/create/factory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DBapp/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/DBapp/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBapp/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/DBapp/test.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,12 +113,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.test.php">
+  <component name="RunManager" selected="PHP Script.factory.php">
     <configuration name="CalculatorTests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner class="CalculatorTests" directory="$PROJECT_DIR$/unittest" file="$PROJECT_DIR$/unittest/CalculatorTests.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="arrays.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/httplearn/arrays.php">
+    <configuration name="factory.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/create/factory.php">
       <method v="2" />
     </configuration>
     <configuration name="jmetertest.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/tests/jmetertest.php">
@@ -135,20 +134,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHP Script.arrays.php" />
       <item itemvalue="PHP Script.redistest.php" />
       <item itemvalue="PHP Script.test.php (3)" />
-      <item itemvalue="PHPUnit.CalculatorTests" />
       <item itemvalue="PHP Script.jmetertest.php" />
       <item itemvalue="PHP Script.test.php" />
+      <item itemvalue="PHPUnit.CalculatorTests" />
+      <item itemvalue="PHP Script.factory.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.factory.php" />
         <item itemvalue="PHP Script.test.php" />
         <item itemvalue="PHP Script.jmetertest.php" />
         <item itemvalue="PHP Script.redistest.php" />
         <item itemvalue="PHP Script.test.php (3)" />
-        <item itemvalue="PHP Script.arrays.php" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +178,8 @@
       <workItem from="1591815278249" duration="2137000" />
       <workItem from="1591871497736" duration="7556000" />
       <workItem from="1591946609428" duration="12420000" />
-      <workItem from="1591975021551" duration="7571000" />
+      <workItem from="1591975021551" duration="8230000" />
+      <workItem from="1592052269187" duration="2089000" />
     </task>
     <servers />
   </component>
