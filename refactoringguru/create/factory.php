@@ -1,4 +1,6 @@
 <?php
+namespace zerist\create\factory;
+
 abstract class Dialog{
     public abstract function createButton() : Button;
 
