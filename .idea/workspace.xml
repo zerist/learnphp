@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cfcac4-db72-48ea-8086-09fde5c07ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/refactoringguru/struct/decorator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/refactoringguru/struct/flyweight.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -111,7 +111,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.decorator.php">
+  <component name="RunManager" selected="PHP Script.flyweight.php">
     <configuration name="CalculatorTests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner class="CalculatorTests" directory="$PROJECT_DIR$/unittest" file="$PROJECT_DIR$/unittest/CalculatorTests.php" scope="Class" />
       <method v="2" />
@@ -128,24 +128,24 @@
     <configuration name="decorator.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/struct/decorator.php">
       <method v="2" />
     </configuration>
-    <configuration name="singleton.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/create/singleton.php">
+    <configuration name="flyweight.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/struct/flyweight.php">
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHP Script.singleton.php" />
       <item itemvalue="PHP Script.adapter.php" />
       <item itemvalue="PHP Script.bridge.php" />
       <item itemvalue="PHPUnit.CalculatorTests" />
       <item itemvalue="PHP Script.composite.php" />
       <item itemvalue="PHP Script.decorator.php" />
+      <item itemvalue="PHP Script.flyweight.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.flyweight.php" />
         <item itemvalue="PHP Script.decorator.php" />
         <item itemvalue="PHP Script.composite.php" />
         <item itemvalue="PHP Script.bridge.php" />
         <item itemvalue="PHP Script.adapter.php" />
-        <item itemvalue="PHP Script.singleton.php" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +179,7 @@
       <workItem from="1591975021551" duration="8230000" />
       <workItem from="1592052269187" duration="13896000" />
       <workItem from="1592128929763" duration="6585000" />
-      <workItem from="1592224900309" duration="4823000" />
+      <workItem from="1592224900309" duration="7330000" />
     </task>
     <servers />
   </component>
@@ -201,5 +201,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PhpLocalRunConfigurationType">
+        <watch expression="TreeFactory" />
+        <watch expression="$trees" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
