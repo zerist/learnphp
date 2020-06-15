@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cfcac4-db72-48ea-8086-09fde5c07ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/refactoringguru/struct/composite.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoringguru/struct/composite.php" beforeDir="false" afterPath="$PROJECT_DIR$/refactoringguru/struct/composite.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,18 +111,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.bridge.php">
+  <component name="RunManager" selected="PHP Script.composite.php">
     <configuration name="CalculatorTests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner class="CalculatorTests" directory="$PROJECT_DIR$/unittest" file="$PROJECT_DIR$/unittest/CalculatorTests.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="abstractFactory.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/create/abstractFactory.php">
       <method v="2" />
     </configuration>
     <configuration name="adapter.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/struct/adapter.php">
       <method v="2" />
     </configuration>
     <configuration name="bridge.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/struct/bridge.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="composite.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/struct/composite.php">
       <method v="2" />
     </configuration>
     <configuration name="creator.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/create/creator.php">
@@ -132,20 +132,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHP Script.abstractFactory.php" />
       <item itemvalue="PHP Script.creator.php" />
       <item itemvalue="PHP Script.singleton.php" />
       <item itemvalue="PHP Script.adapter.php" />
       <item itemvalue="PHP Script.bridge.php" />
       <item itemvalue="PHPUnit.CalculatorTests" />
+      <item itemvalue="PHP Script.composite.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.composite.php" />
         <item itemvalue="PHP Script.bridge.php" />
         <item itemvalue="PHP Script.adapter.php" />
         <item itemvalue="PHP Script.singleton.php" />
         <item itemvalue="PHP Script.creator.php" />
-        <item itemvalue="PHP Script.abstractFactory.php" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +179,7 @@
       <workItem from="1591975021551" duration="8230000" />
       <workItem from="1592052269187" duration="13896000" />
       <workItem from="1592128929763" duration="6585000" />
-      <workItem from="1592224900309" duration="1624000" />
+      <workItem from="1592224900309" duration="3081000" />
     </task>
     <servers />
   </component>

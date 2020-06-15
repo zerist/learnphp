@@ -2,6 +2,8 @@
 namespace zerist\struct\composite;
 
 //componet interface
+use phpDocumentor\Reflection\Types\This;
+
 interface Graphic {
     function move(int $x, int $y);
     function draw();
@@ -55,7 +57,24 @@ class CompoundGraphic implements Graphic {
     }
 
     public function remove(Graphic $graphic){
-        
+        array_diff($this->arrGraph, [$graphic]);
+    }
+
+    public function move(int $x, int $y)
+    {
+        // TODO: Implement move() method.
+        foreach ($this->arrGraph as $graph){
+            $graph->move($x, $y);
+        }
+    }
+
+    public function draw()
+    {
+        // TODO: Implement draw() method.
+        foreach ($this->arrGraph as $graph){
+            $graph->draw();
+            //todo other cmd
+        }
     }
 }
 
@@ -63,5 +82,16 @@ class CompoundGraphic implements Graphic {
 class ImageEditor{
     public $arrGraph;
 
+    public function __construct(){
+        $this->arrGraph = new CompoundGraphic();
+        $this->arrGraph->add(new Dot(1,2));
+        $this->arrGraph->add(new Circle(5,3,10));
+    }
 
+    public function draw(){
+        $this->arrGraph->draw();
+    }
 }
+
+$app = new ImageEditor();
+$app->draw();
