@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cfcac4-db72-48ea-8086-09fde5c07ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/refactoringguru/behavir/command.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoringguru/behavir/command.php" beforeDir="false" afterPath="$PROJECT_DIR$/refactoringguru/behavir/command.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +180,7 @@
       <workItem from="1592052269187" duration="13896000" />
       <workItem from="1592128929763" duration="6585000" />
       <workItem from="1592224900309" duration="8111000" />
-      <workItem from="1592316937236" duration="4107000" />
+      <workItem from="1592316937236" duration="6563000" />
     </task>
     <servers />
   </component>
