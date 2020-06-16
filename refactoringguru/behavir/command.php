@@ -58,7 +58,7 @@ abstract class WebScrapingCommand implements Command
 
 //concrete command class
 class IMDBGenresScrapingCommand extends WebScrapingCommand{
-    public function __construct(string $url)
+    public function __construct()
     {
         $this->url = "https://www.imdb.com/feature/genre";
     }
@@ -66,10 +66,10 @@ class IMDBGenresScrapingCommand extends WebScrapingCommand{
     public function parse(string $html)
     {
         preg_match_all("|href=\"(https://www.imdb.com/search/title\?genres=.*?)\"|",$html,$matches);
-        echo "IMDBGenresScrapingCommand: Discover " . count($matches[1]) . " genres.\n"
+        echo "IMDBGenresScrapingCommand: Discover " . count($matches[1]) . " genres.\n";
 
         foreach ($matches[1] as $genre){
-            Queue::get()->add(new IMDBGenresScrapingCommand($genre));
+            Queue::get()->add(new IMDBGenrePageScrapingCommand($genre));
         }
     }
 }
@@ -124,7 +124,7 @@ class Queue{
         $this->db = new \SQLite3(__DIR__ . '/commands.sqlite',
         SQLITE3_OPEN_CREATE | SQLITE3_OPEN_READWRITE);
         $this->db->query('CREATE TABLE IF NOT EXISTS "commands" (
-            "id" INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL ,
+            "id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL ,
             "command" TEXT,
             "status" INTEGER 
         )');
@@ -176,4 +176,13 @@ class Queue{
         }
         return $instance;
     }
+
+
 }
+
+//client code
+$queue = Queue::get();
+if($queue->isEmpty()){
+    $queue->add(new IMDBGenresScrapingCommand());
+}
+$queue->work();
