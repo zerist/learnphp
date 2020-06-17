@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cfcac4-db72-48ea-8086-09fde5c07ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/refactoringguru/behavir/mediator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/refactoringguru/behavir/observer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -130,7 +130,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.iterator.php">
+  <component name="RunManager" selected="PHP Script.observer.php">
     <configuration name="CalculatorTests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner class="CalculatorTests" directory="$PROJECT_DIR$/unittest" file="$PROJECT_DIR$/unittest/CalculatorTests.php" scope="Class" />
       <method v="2" />
@@ -141,30 +141,30 @@
     <configuration name="commandchain.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/behavir/commandchain.php">
       <method v="2" />
     </configuration>
-    <configuration name="decorator.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/struct/decorator.php">
-      <method v="2" />
-    </configuration>
     <configuration name="flyweight.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/struct/flyweight.php">
       <method v="2" />
     </configuration>
     <configuration name="iterator.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/behavir/iterator.php">
       <method v="2" />
     </configuration>
+    <configuration name="observer.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/behavir/observer.php">
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="PHP Script.decorator.php" />
       <item itemvalue="PHP Script.flyweight.php" />
       <item itemvalue="PHP Script.commandchain.php" />
       <item itemvalue="PHP Script.command.php" />
       <item itemvalue="PHP Script.iterator.php" />
       <item itemvalue="PHPUnit.CalculatorTests" />
+      <item itemvalue="PHP Script.observer.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.observer.php" />
         <item itemvalue="PHP Script.iterator.php" />
         <item itemvalue="PHP Script.command.php" />
         <item itemvalue="PHP Script.commandchain.php" />
         <item itemvalue="PHP Script.flyweight.php" />
-        <item itemvalue="PHP Script.decorator.php" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +200,7 @@
       <workItem from="1592128929763" duration="6585000" />
       <workItem from="1592224900309" duration="8111000" />
       <workItem from="1592316937236" duration="12040000" />
-      <workItem from="1592392810063" duration="1511000" />
+      <workItem from="1592392810063" duration="4354000" />
     </task>
     <servers />
   </component>
