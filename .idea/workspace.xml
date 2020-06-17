@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cfcac4-db72-48ea-8086-09fde5c07ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/refactoringguru/behavir/state.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/refactoringguru/behavir/stragete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -200,7 +200,7 @@
       <workItem from="1592128929763" duration="6585000" />
       <workItem from="1592224900309" duration="8111000" />
       <workItem from="1592316937236" duration="12040000" />
-      <workItem from="1592392810063" duration="5708000" />
+      <workItem from="1592392810063" duration="7502000" />
     </task>
     <servers />
   </component>
