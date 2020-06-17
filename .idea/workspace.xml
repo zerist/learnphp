@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cfcac4-db72-48ea-8086-09fde5c07ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/refactoringguru/behavir/commands.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/refactoringguru/behavir/iterator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/refactoringguru/behavir/mediator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoringguru/behavir/command.php" beforeDir="false" afterPath="$PROJECT_DIR$/refactoringguru/behavir/command.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,10 +153,10 @@
     <list>
       <item itemvalue="PHP Script.decorator.php" />
       <item itemvalue="PHP Script.flyweight.php" />
-      <item itemvalue="PHPUnit.CalculatorTests" />
       <item itemvalue="PHP Script.commandchain.php" />
       <item itemvalue="PHP Script.command.php" />
       <item itemvalue="PHP Script.iterator.php" />
+      <item itemvalue="PHPUnit.CalculatorTests" />
     </list>
     <recent_temporary>
       <list>
@@ -203,7 +199,8 @@
       <workItem from="1592052269187" duration="13896000" />
       <workItem from="1592128929763" duration="6585000" />
       <workItem from="1592224900309" duration="8111000" />
-      <workItem from="1592316937236" duration="11277000" />
+      <workItem from="1592316937236" duration="12040000" />
+      <workItem from="1592392810063" duration="1511000" />
     </task>
     <servers />
   </component>
