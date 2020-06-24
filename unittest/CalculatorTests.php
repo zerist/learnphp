@@ -1,7 +1,9 @@
 <?php
 require "Calculator.php";
 
-use PHPUnit\Framework\TestCase;
+require 'vendor/autoload.php';
+
+use \PHPUnit\Framework\TestCase;
 
 class CalculatorTests extends TestCase{
     private $test;

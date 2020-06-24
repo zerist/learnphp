@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cfcac4-db72-48ea-8086-09fde5c07ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/refactoringguru/behavir/stragete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoringguru/behavir/stragete.php" beforeDir="false" afterPath="$PROJECT_DIR$/refactoringguru/behavir/stragete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/jmetertest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/jmetertest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittest/CalculatorTests.php" beforeDir="false" afterPath="$PROJECT_DIR$/unittest/CalculatorTests.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +112,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/composer.json" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.php.debug.xdebug.proxy" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -130,7 +134,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.state.php">
+  <component name="RunManager" selected="PHP Script.jmetertest.php">
     <configuration name="CalculatorTests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner class="CalculatorTests" directory="$PROJECT_DIR$/unittest" file="$PROJECT_DIR$/unittest/CalculatorTests.php" scope="Class" />
       <method v="2" />
@@ -138,10 +142,10 @@
     <configuration name="command.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/behavir/command.php">
       <method v="2" />
     </configuration>
-    <configuration name="commandchain.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/behavir/commandchain.php">
+    <configuration name="iterator.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/behavir/iterator.php">
       <method v="2" />
     </configuration>
-    <configuration name="iterator.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/behavir/iterator.php">
+    <configuration name="jmetertest.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/tests/jmetertest.php">
       <method v="2" />
     </configuration>
     <configuration name="observer.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/refactoringguru/behavir/observer.php">
@@ -151,20 +155,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHP Script.commandchain.php" />
       <item itemvalue="PHP Script.command.php" />
       <item itemvalue="PHP Script.iterator.php" />
-      <item itemvalue="PHPUnit.CalculatorTests" />
       <item itemvalue="PHP Script.observer.php" />
       <item itemvalue="PHP Script.state.php" />
+      <item itemvalue="PHP Script.jmetertest.php" />
+      <item itemvalue="PHPUnit.CalculatorTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.jmetertest.php" />
         <item itemvalue="PHP Script.state.php" />
         <item itemvalue="PHP Script.observer.php" />
         <item itemvalue="PHP Script.iterator.php" />
         <item itemvalue="PHP Script.command.php" />
-        <item itemvalue="PHP Script.commandchain.php" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +204,9 @@
       <workItem from="1592128929763" duration="6585000" />
       <workItem from="1592224900309" duration="8111000" />
       <workItem from="1592316937236" duration="12040000" />
-      <workItem from="1592392810063" duration="7502000" />
+      <workItem from="1592392810063" duration="8101000" />
+      <workItem from="1592482578412" duration="4008000" />
+      <workItem from="1593005645475" duration="848000" />
     </task>
     <servers />
   </component>

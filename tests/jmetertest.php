@@ -1,8 +1,7 @@
 <?php
-$num = 4;
-if(isset($_POST['num'])) $num = $_POST['num'];
-$sum = 0;
-for($i=0; $i<=$num; $i++){
-    $sum += $i;
-}
-echo $sum;
+require '../vendor/autoload.php';
+
+
+$log = new \Monolog\Logger('name');
+$log->pushHandler(new \Monolog\Handler\StreamHandler('app.log', MonoLog\Logger::WARNING));
+$log->addRecord(\Monolog\Logger::WARNING, "test warning");

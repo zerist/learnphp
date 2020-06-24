@@ -1,12 +1,15 @@
 <?php
+
 namespace zerist\behavir\stragete;
 
 //class represent Order
+
 /**
  * Class Order
  * @package zerist\behavir\stragete
  */
-class Order{
+class Order
+{
     /**
      * @var array
      */
@@ -19,9 +22,9 @@ class Order{
      */
     public static function get(int $orderId = null)
     {
-        if($orderId === null){
+        if ($orderId === null) {
             return self::$orders;
-        }else{
+        } else {
             return self::$orders[$orderId];
         }
     }
@@ -30,14 +33,15 @@ class Order{
     {
         $this->id = count(self::$orders);
         $this->status = "new";
-        foreach ($arrtributes as $key => $value){
+        foreach ($arrtributes as $key => $value) {
             $this->{$key} = $value;
         }
         self::$orders[$this->id] = $this;
     }
 
 
-    public function complete() : void {
+    public function complete(): void
+    {
         $this->status = "completed";
         echo "Order: #{$this->id} is now {$this->status}.\n";
     }
@@ -46,7 +50,8 @@ class Order{
 //stratege class factory
 class PaymentFactory
 {
-    public static function getPaymentMethod(string $id) : PaymentMethod{
+    public static function getPaymentMethod(string $id): PaymentMethod
+    {
         switch ($id) {
             case "cc":
                 return new CreditCardPayment();
@@ -62,12 +67,14 @@ class PaymentFactory
  */
 interface PaymentMethod
 {
-    public function getPaymentForm(Order $order) : string ;
-    public function validateReturn(Order $order, array $data) : bool ;
+    public function getPaymentForm(Order $order): string;
+
+    public function validateReturn(Order $order, array $data): bool;
 }
 
 //concrete strategy class
-class CreditCardPayment implements PaymentMethod{
+class CreditCardPayment implements PaymentMethod
+{
     static private $store_secret_key = "xukang";
 
     public function getPaymentForm(Order $order): string
